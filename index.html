@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenovo Corporate Solutions | E-commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=2">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__wrapper container">
+      <span class="topbar__tagline">Potencia corporativa con respaldo Lenovo</span>
+      <nav class="topbar__links">
+        <a href="#servicios">Servicios Gestionados</a>
+        <a href="#soluciones">Soluciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="navbar__inner container">
+      <div class="navbar__brand">
+        <span class="navbar__logo">LenovoEC</span>
+        <span class="navbar__subtitle">Corporate Commerce</span>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="#productos">Catálogo</a></li>
+        <li><a href="#isg">Lenovo ISG</a></li>
+        <li><a href="#idg">Lenovo IDG</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#contacto" class="button button--primary">Solicitar demo</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content container">
+        <div class="hero__copy">
+          <h1>Soluciones Lenovo para empresas visionarias</h1>
+          <p>Integra la innovación de Lenovo Infrastructure Solutions Group (ISG) y Intelligent Devices Group (IDG) en una experiencia de compra digital unificada y pensada para equipos de TI corporativos.</p>
+          <div class="hero__actions">
+            <a href="#productos" class="button button--primary">Explorar catálogo</a>
+            <a href="#contacto" class="button button--ghost">Asesor corporativo</a>
+          </div>
+          <div class="hero__badges">
+            <span>✔️ Entregas priorizadas</span>
+            <span>✔️ Contratos marco</span>
+            <span>✔️ Soporte 24/7</span>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80" alt="Equipo de TI corporativo trabajando con soluciones Lenovo" class="hero__image">
+          <div class="hero__card">
+            <h2>Configuraciones a la medida</h2>
+            <p>Define políticas de compra, catálogos privados y acuerdos de servicio con visibilidad en tiempo real.</p>
+            <ul>
+              <li>Gestión de licitaciones y cotizaciones simultáneas</li>
+              <li>Portal para clientes multi-sede con control de presupuestos</li>
+              <li>Integración con ERP y plataformas de procurement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-strip">
+      <div class="brand-strip__wrapper container">
+        <div class="brand-strip__label">Ecosistema Lenovo</div>
+        <div class="brand-strip__logos">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Lenovo_logo_2015.svg" alt="Logo Lenovo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Intel_logo_%282020%2C_dark_blue%29.svg" alt="Intel Partner">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg" alt="NVIDIA Alliance">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Microsoft_logo.svg" alt="Microsoft Solutions">
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="services container">
+      <h2>Experiencia corporativa de punta a punta</h2>
+      <div class="services__grid">
+        <article class="service-card">
+          <h3>Marketplace privado</h3>
+          <p>Catálogo dinámico segmentado por unidad de negocio, reglas de aprobación y disponibilidad en tiempo real.</p>
+        </article>
+        <article class="service-card">
+          <h3>Financiamiento y contratos</h3>
+          <p>Ofertas de leasing, pago por uso y contratos marco Lenovo TruScale diseñados para grandes corporaciones.</p>
+        </article>
+        <article class="service-card">
+          <h3>Servicios gestionados</h3>
+          <p>Implementación, soporte proactivo y administración del ciclo de vida completo de tus activos Lenovo.</p>
+        </article>
+        <article class="service-card">
+          <h3>Analytics &amp; reporting</h3>
+          <p>Paneles de control con métricas de cumplimiento, presupuesto y sustentabilidad para decisiones estratégicas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="productos" class="catalog">
+      <div class="container">
+        <div class="catalog__header">
+          <h2>Catálogo inteligente Lenovo</h2>
+          <p>Personaliza tu vista entre soluciones de infraestructura (ISG) y dispositivos inteligentes (IDG).</p>
+        </div>
+        <div class="catalog__filters">
+          <button class="filter-button is-active" data-filter="all">Todos</button>
+          <button class="filter-button" data-filter="ISG">Lenovo ISG</button>
+          <button class="filter-button" data-filter="IDG">Lenovo IDG</button>
+          <button class="filter-button" data-filter="Servicios">Servicios &amp; Soporte</button>
+        </div>
+        <div class="catalog__grid" id="catalog-grid"></div>
+      </div>
+    </section>
+
+    <section id="isg" class="segment segment--isg">
+      <div class="container segment__wrapper">
+        <div class="segment__content">
+          <h2>Infrastructure Solutions Group (ISG)</h2>
+          <p>Soluciones de centro de datos con desempeño superior para cargas críticas. Diseñadas para escalar con tus necesidades de virtualización, inteligencia artificial y edge computing.</p>
+          <ul>
+            <li>Servidores ThinkSystem y ThinkAgile listos para la nube híbrida.</li>
+            <li>Infraestructura hiperconvergente certificada para VMware, Nutanix y Microsoft.</li>
+            <li>Equipos validados para SAP HANA, bases de datos y analítica avanzada.</li>
+          </ul>
+          <a class="button button--light" href="#contacto">Habla con un especialista ISG</a>
+        </div>
+        <div class="segment__badge">
+          <span>ISG</span>
+          <p>Infraestructura segura</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="idg" class="segment segment--idg">
+      <div class="container segment__wrapper segment__wrapper--reverse">
+        <div class="segment__content">
+          <h2>Intelligent Devices Group (IDG)</h2>
+          <p>Dispositivos inteligentes, listos para el trabajo híbrido con administración centralizada y servicios gestionados.</p>
+          <ul>
+            <li>Laptops ThinkPad y workstations ThinkStation con certificaciones ISV.</li>
+            <li>Soluciones de colaboración ThinkSmart para salas de reunión y espacios híbridos.</li>
+            <li>Servicios de despliegue, protección de datos y renovación tecnológica.</li>
+          </ul>
+          <a class="button button--dark" href="#contacto">Optimiza tu parque IDG</a>
+        </div>
+        <div class="segment__badge">
+          <span>IDG</span>
+          <p>Productividad inteligente</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="soluciones" class="solutions container">
+      <h2>Arquitecturas recomendadas</h2>
+      <div class="solutions__grid">
+        <article class="solution-card">
+          <h3>Data Center Moderno</h3>
+          <p>Infraestructura hiperconvergente ThinkAgile MX con gestión unificada, backup automatizado y recuperación ante desastres.</p>
+          <ul>
+            <li>Implementación en 6 semanas</li>
+            <li>Escalabilidad lineal</li>
+            <li>Soporte Premier</li>
+          </ul>
+        </article>
+        <article class="solution-card">
+          <h3>Trabajo Híbrido Seguro</h3>
+          <p>Bundle de laptops ThinkPad X1, monitores ThinkVision y servicios de seguridad ThinkShield para corporaciones globales.</p>
+          <ul>
+            <li>Provisioning automatizado</li>
+            <li>Gestión de identidades y cifrado</li>
+            <li>Renovación programada</li>
+          </ul>
+        </article>
+        <article class="solution-card">
+          <h3>Edge AI Industrial</h3>
+          <p>Servidores Lenovo SE con GPUs NVIDIA y software de análisis en tiempo real para operaciones industriales distribuidas.</p>
+          <ul>
+            <li>Resiliencia en ambientes extremos</li>
+            <li>Orquestación centralizada</li>
+            <li>Integración con plataformas OT</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="recursos" class="resources">
+      <div class="container resources__wrapper">
+        <div class="resources__content">
+          <h2>Recursos estratégicos</h2>
+          <p>Accede a materiales exclusivos, casos de éxito y certificaciones para respaldar tus decisiones de compra.</p>
+          <div class="resources__list">
+            <a class="resource-pill" href="#">Guía ISG para CIOs</a>
+            <a class="resource-pill" href="#">Whitepaper Modern Workplace</a>
+            <a class="resource-pill" href="#">Catálogo de servicios TruScale</a>
+            <a class="resource-pill" href="#">Casos de éxito sector financiero</a>
+          </div>
+        </div>
+        <div class="resources__cta">
+          <h3>Suscríbete al boletín ejecutivo</h3>
+          <form class="newsletter-form" id="newsletter-form">
+            <label for="newsletter-email" class="sr-only">Correo electrónico</label>
+            <input id="newsletter-email" name="email" type="email" placeholder="tu@empresa.com" required>
+            <button type="submit" class="button button--primary">Suscribirme</button>
+          </form>
+          <p class="newsletter-feedback" id="newsletter-feedback"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <div class="container contact__wrapper">
+        <div class="contact__info">
+          <h2>Conversemos sobre tu próximo proyecto Lenovo</h2>
+          <p>Completa el formulario y uno de nuestros especialistas certificados te contactará en menos de 24 horas.</p>
+          <div class="contact__highlights">
+            <span>✔️ Oficinas regionales y soporte onsite</span>
+            <span>✔️ Integraciones API y procurement electrónico</span>
+            <span>✔️ Acuerdos de nivel de servicio personalizados</span>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-field">
+            <label for="name">Nombre completo</label>
+            <input id="name" type="text" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="company">Empresa</label>
+            <input id="company" type="text" name="company" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Correo corporativo</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="segment">Interés principal</label>
+            <select id="segment" name="segment" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="ISG">Infraestructura (ISG)</option>
+              <option value="IDG">Dispositivos inteligentes (IDG)</option>
+              <option value="Servicios">Servicios gestionados</option>
+              <option value="Financiamiento">Financiamiento &amp; contratos</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Requerimientos</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="button button--primary">Solicitar asesoría</button>
+          <p class="form-feedback" id="contact-feedback"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__wrapper">
+      <div class="footer__brand">
+        <span class="footer__logo">LenovoEC</span>
+        <p>Soluciones corporativas Lenovo para organizaciones que necesitan disponibilidad, seguridad y escalabilidad.</p>
+      </div>
+      <div class="footer__columns">
+        <div>
+          <h4>Segmentos</h4>
+          <ul>
+            <li><a href="#isg">Infraestructura (ISG)</a></li>
+            <li><a href="#idg">Dispositivos (IDG)</a></li>
+            <li><a href="#soluciones">Paquetes estratégicos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Soporte</h4>
+          <ul>
+            <li><a href="#">Portal clientes</a></li>
+            <li><a href="#">Mesa de ayuda 24/7</a></li>
+            <li><a href="#">Centro de recursos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="mailto:corporativo@lenovoec.com">corporativo@lenovoec.com</a></li>
+            <li><a href="#contacto">Agenda una reunión</a></li>
+            <li><a href="#">Políticas de seguridad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <div class="container footer__legal-wrapper">
+        <span>© 2024 LenovoEC. Todos los derechos reservados.</span>
+        <span>Partners Platinum Lenovo | Certificación ISO 27001</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
